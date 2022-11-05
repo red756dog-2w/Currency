@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Fjord+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <h1 class="text_center" id="currency_header">JB's Currency Converter</h1>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-6 text_center">
+                <label for="start_currency" class="lbl_color">Starting Currency:</label>
+                <select name="" id="start_currency">
+                    <option class="default_option" value="" selected disabled hidden>Select starting currency!</option>
+                </select>
+            </div>
+            <div class="col-6 text_center">
+                <label for="end_currency">Ending Currency:</label>
+                <select name="" id="end_currency">
+                    <option class="default_option" value="" selected disabled hidden>Select ending currency!</option>
+                </select>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-6 text_center">
+                <label for="start_amount">Amount to convert:</label>
+                <input type="text" name="" id="start_amount" class="txt_style" size="9">
+            </div>
+            <div class="col-6 text_center">
+                <label for="end_amount">Amount in new currency: </label>
+                <input type="text" name="" id="end_amount" class="txt_style" size="9">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="text_center button_spacing">
+                <button class="btn btn-success btn-lg button_mar">Calculate</button>
+                <button id="clear_reset" class="btn btn-primary btn-lg button_mar">Next Conversion</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
